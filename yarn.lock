@@ -1124,6 +1124,7 @@ __metadata:
     react-dom: "npm:^18.3.1"
     react-responsive-carousel: "npm:^3.2.23"
     react-router: "npm:^7.1.1"
+    swiper: "npm:^11.2.1"
     tailwindcss: "npm:^3.4.17"
     vite: "npm:^6.0.5"
   languageName: unknown
@@ -4088,6 +4089,13 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 10c0/6c4032340701a9950865f7ae8ef38578d8d7053f5e10518076e6554a9381fa91bd9c6850193695c141f32b21f979c985db07265a758867bac95de05f7d8aeb39
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^11.2.1":
+  version: 11.2.1
+  resolution: "swiper@npm:11.2.1"
+  checksum: 10c0/7260ad4f145d10535dc11aa634ecc736cad42280ee8b12423dfe3568efd9d3c0c5e5dc3d82dde5ebfd98b42a53b7ea6e760ebd22c1bcbb96d43ad8e1520fb7d7
   languageName: node
   linkType: hard
 
