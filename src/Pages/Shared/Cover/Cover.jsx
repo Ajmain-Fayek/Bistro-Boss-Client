@@ -2,19 +2,19 @@ import React from "react";
 
 const Cover = ({
     image,
+    height = "h-[700px]",
     subTitle = "pass prop for subTitle - subtitle = {'Subtitle'}",
     title = "pass prop for Title - title = {'Title'}",
-    titleFontSize = "5xl",
+    titleFontSize = "4xl",
     subTitleFont = "Cinzel",
     subTitleFontSize = "base",
-    height = 700,
     contentMargin = "",
     contentPadding = "py-36",
 }) => {
     return (
-        <div className="hero relative">
+        <div className="hero">
             <img
-                className={`w-full h-[${height}px] object-cover`}
+                className={`w-full ${height} object-cover object-center`}
                 src={image}
             />
             <div
