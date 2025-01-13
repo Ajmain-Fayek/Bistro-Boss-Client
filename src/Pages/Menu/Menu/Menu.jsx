@@ -10,11 +10,12 @@ const Menu = () => {
                 <title>Menu | Bistro Boss</title>
             </Helmet>
             <Cover
-                height={"h-[800px]"}
+                height={"800px"}
                 image={img}
                 title={"our menu"}
                 subTitle={"Would you like to try a dish?"}
                 contentMargin="mt-20"
+                parallaxDisabled={true}
             />
         </>
     );

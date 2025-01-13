@@ -1,4 +1,5 @@
 import React from "react";
+import { Parallax } from "react-parallax";
 
 const Cover = ({
     image,
@@ -10,30 +11,42 @@ const Cover = ({
     subTitleFontSize = "base",
     contentMargin = "",
     contentPadding = "py-36",
+    parallaxDisabled = false,
 }) => {
     return (
-        <div className="hero">
-            <img
-                className={`w-full ${height} object-cover object-center`}
-                src={image}
-            />
-            <div
-                className={`hero-content ${contentMargin} w-full bg-overlay text-white ${contentPadding} text-center`}
+        <>
+            <Parallax
+                bgImage={image}
+                disabled={parallaxDisabled}
+                bgImageStyle={{
+                    height,
+                    backgroundSize: "cover",
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    width: "100%",
+                }}
+                strength={500}
             >
-                <div className="max-w-md">
-                    <h1
-                        className={`mb-5 uppercase text-${titleFontSize} font-Cinzel font-bold`}
+                <div className={`hero h-[${height}]`}>
+                    <div
+                        className={`hero-content ${contentMargin} w-full bg-overlay text-white ${contentPadding} text-center`}
                     >
-                        {title}
-                    </h1>
-                    <p
-                        className={`font-semibold text-${subTitleFontSize} font-${subTitleFont}`}
-                    >
-                        {subTitle}
-                    </p>
+                        <div className="max-w-md">
+                            <h1
+                                className={`mb-5 uppercase text-${titleFontSize} font-Cinzel font-bold`}
+                            >
+                                {title}
+                            </h1>
+                            <p
+                                className={`font-semibold text-${subTitleFontSize} font-${subTitleFont}`}
+                            >
+                                {subTitle}
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </Parallax>
+        </>
     );
 };
 
